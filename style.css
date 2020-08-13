@@ -33,14 +33,23 @@ body
 .fa-playstation
 {
 	color: #323335;
+ 	border-radius: 50%;
+ 	border: solid;
+ 	padding:10px;
 }
 .fa-swimmer
 {
 	color: #323335;
+	border-radius: 50%;
+	border: solid;
+	padding: 10px;
 }
 .fa-spotify
 {
 	color: #323335;
+	border-radius: 50%;
+	border: solid;
+	padding: 10px;
 }
 .fa-black-tie
 {
@@ -134,13 +143,13 @@ h4 /*titres du bloc central*/
 	margin-bottom: 2%;
 	margin-top: 5%;
 	font-size: 2em;
-	margin-left: 8%;
+	margin-left: 14%;
 }
 .trait
 {
 	border-top: 2px solid #f8a825;
-	width: 45em;
-	margin-left: 8%; 
+	width: auto;
+	margin-left: 14%; 
 }
 #traid
 {
@@ -156,6 +165,8 @@ h4 /*titres du bloc central*/
 .dates
 {
 	width: 7em;
+	text-align: center;
+	margin-right: 5%;
 }
 #bas
 {
@@ -187,15 +198,23 @@ and (orientation: portrait)
 {
 	.trait
 	{
-		width: 30em;
+		width: 28em;
 	}
 	.cattxt
 	{
 		height: 43em;
 	}
+	.dates
+	{
+		margin-left: 10%;
+	}
+	.coor
+	{
+		margin-left: 12%;
+	}
 	.loisirs
 	{
-		font-size: 3em;
+		font-size: 2em;
 	}
 	.blocloisirs
 	{
@@ -210,8 +229,13 @@ and (orientation: landscape)
 {
 	.trait
 	{
-		width: 30em;
+		width: 37em;
 	}
+	.loisirs
+	{
+		font-size: 2em;
+	}
+
 }
 
 /* telephones */
@@ -221,6 +245,7 @@ and (orientation: landscape)
 	body
 	{
 		padding: 0%;
+		font-size: small;
 	}
 	figure
 	{
@@ -289,5 +314,15 @@ and (orientation: landscape)
 	{
 		width: 100%;
 		position: initial;
+	}
+}
+
+/* grands ecrans */
+
+@media(min-width: 1600px)
+{
+	.dates
+	{
+		margin-left: -4%;
 	}
 }
